@@ -8,7 +8,11 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
-    <bean id="myCoach" class="berkay.springdemo.BaseballCoach"></bean>
+    <bean id="myFortune" class="berkay.springdemo.HappyFortuneService"></bean>
+
+    <bean id="myCoach" class="berkay.springdemo.TrackCoach">
+        <constructor-arg ref="myFortune"></constructor-arg>
+    </bean>
 </beans>
 
 
