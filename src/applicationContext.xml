@@ -16,6 +16,8 @@
 
     <bean id="myCricketCoach" class="berkay.springdemo.CricketCoach">
         <property name="fortuneService" ref="myFortuneService"></property>
+        <property name="eMailAdress" value="cricketChamp@test.de"></property>
+        <property name="team" value="TheCricketers"></property>
     </bean>
 </beans>
 
