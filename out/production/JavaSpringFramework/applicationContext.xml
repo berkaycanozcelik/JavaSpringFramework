@@ -7,18 +7,7 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- Define your beans here -->
-    <bean id="myFortuneService" class="berkay.springdemo.HappyFortuneService"></bean>
-
-    <bean id="myCoach" class="berkay.springdemo.TrackCoach">
-        <constructor-arg ref="myFortuneService"></constructor-arg>
-    </bean>
-
-    <bean id="myCricketCoach" class="berkay.springdemo.CricketCoach">
-        <property name="fortuneService" ref="myFortuneService"></property>
-        <property name="eMailAdress" value="cricketChamp@test.de"></property>
-        <property name="team" value="TheCricketers"></property>
-    </bean>
+    <context:component-scan base-package="berkay.springdemo"/>
 </beans>
 
 
