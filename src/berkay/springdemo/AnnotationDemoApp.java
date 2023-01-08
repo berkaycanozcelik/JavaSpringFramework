@@ -13,6 +13,10 @@ public class AnnotationDemoApp {
 
         System.out.println(theCoach.getDailyFortune());
 
+        System.out.println(theCoach.getEmail());
+
+        System.out.println(theCoach.getName());
+
         context.close();
     }
 }
