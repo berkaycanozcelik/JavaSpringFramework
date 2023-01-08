@@ -13,11 +13,20 @@ public class TennisCoach implements Coach{
         this.fortuneService = fortuneService;
     }
 
-    //Setter Injection
-    //    @Autowired
-    //    public void setFortuneService(FortuneService fortuneService) {
-    //        this.fortuneService = fortuneService;
-    //    }
+    /*
+        Setter Injection
+            @Autowired
+            public void setFortuneService(FortuneService fortuneService) {
+                this.fortuneService = fortuneService;
+            }
+
+        method Injection
+            @Autowired
+            public void seeThisIsMethodInjection(FortuneService fortuneService){
+                System.out.println("Inside seeThisIsMethodInjection Method");
+                this.fortuneService = fortuneService;
+            }
+    */
 
     @Override
     public String getDailyWorkout() {
