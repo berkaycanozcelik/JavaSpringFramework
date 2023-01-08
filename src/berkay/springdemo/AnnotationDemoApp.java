@@ -2,9 +2,10 @@ package berkay.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class beanLifecycleDemoApp {
+public class AnnotationDemoApp {
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beanLifecylceApplicationContext.xml");
+
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         Coach theCoach = context.getBean("myCoach",Coach.class);
 
